@@ -17,7 +17,7 @@
                         <th id="headerButton3">Pricing</th>
                         <th id="headerButton4">Blogs</th>
                         <th id="headerButton5">About</th>
-                        <th><button id="headerButton6" class = "header-account accountButton account-spacing">Login</button></th>
+                        <th><button id="headerButton6" class = "header-account accountButton account-spacing" name="login">Login</button></th>
                         <th><button id="headerButton7" class = "header-account accountButton">Register</button></th>
                     </tr>
                 </table>

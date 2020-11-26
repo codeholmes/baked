@@ -1,0 +1,25 @@
+.brand-name
+{
+    position: relative;
+    width: auto;
+    height: 80px;
+    background-color: white;
+    color: #32595c;
+    font-family:"helvetica";
+    text-align: center;
+    font-size: 40px;
+    padding-top: 25px;
+}
+.login-box
+{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    color: #212429;
+    font-family:"helvetica";
+    text-align: center;
+    font-size: 30px;
+    padding-top: 40px;
+    margin:auto;
+}

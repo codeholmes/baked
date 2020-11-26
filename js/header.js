@@ -41,7 +41,7 @@ $(document).ready(function(){
 
     $("#headerButton6").mouseover(function(){
         $("#headerButton6").css("background-color", "#264547");
-        $("#headerButton6").css("color", "#449aa0");
+        $("#headerButton6").css("color", "white");
     });
     $("#headerButton6").mouseout(function(){
         $("#headerButton6").css("background-color", "#0d0d0d");
@@ -50,11 +50,17 @@ $(document).ready(function(){
 
     $("#headerButton7").mouseover(function(){
         $("#headerButton7").css("background-color", "#264547");
-        $("#headerButton7").css("color", "#449aa0");
+        $("#headerButton7").css("color", "white");
     });
     $("#headerButton7").mouseout(function(){
         $("#headerButton7").css("background-color", "#0d0d0d");
         $("#headerButton7").css("color", "#449aa0");
     });
+
+    $("#headerButton6").click(function()
+    {
+        window.location.href='login.html';
+    });
+
 });
 
