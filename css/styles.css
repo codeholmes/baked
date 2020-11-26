@@ -1,0 +1,94 @@
+body
+{
+    background-color: #0d0d0d;
+}
+
+.header
+{
+    position: relative;
+    width: auto;
+    height: 80px;
+    background-color: #0d0d0d;
+    color: grey;
+    font-family:"helvetica";
+    font-size: 20px;
+    text-align: center;
+    word-spacing: 20px;
+    align-items: center;
+
+}
+
+.align-header-text
+{
+    padding-top: 6px;;
+}
+
+table
+{
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+th
+{
+    padding-left: 25px;
+}
+
+.header-account
+{ 
+    font-family:"helvetica";
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    border-color: #264547;
+    color: #449aa0;
+    background-color: #0d0d0d;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.accountButton {
+    border: 2px solid #449aa0;
+  }
+
+.account-spacing
+{
+    margin-left: 100px;
+}
+
+.logo
+{
+    margin-right: 200px;
+    font-size: 40px;
+}
+
+#headerButton1, #headerButton2, #headerButton3,
+#headerButton4, #headerButton5, #headerButton5
+{
+    cursor: pointer;
+}
+
+hr
+{
+    height:0.5px;
+    border-width:0;
+    background-color: grey;
+}
+
+.body-text-compress
+{
+    margin-top: 80px;
+    color: white;
+    font-family:"helvetica";
+    font-size: 65px;
+    text-align: center;
+    align-items: center;
+}
+
+.color-tag
+{
+    color: #449aa0;
+}
