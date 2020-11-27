@@ -3,8 +3,8 @@
     <head>
         <title>Home</title>
         <link rel="stylesheet" href="css/styles.css">
-        <script src="js/jquery-3.5.1.js"></script>
-        <script src="js/header.js"></script>
+        <script src="js/jquery/jquery-3.5.1.js"></script>
+        <script src="js/jquery/header.js"></script>
     </head>
     <body>
         <div class="header">

@@ -62,5 +62,9 @@ $(document).ready(function(){
         window.location.href='login.html';
     });
 
+    $("#headerButton7").click(function()
+    {
+        window.location.href='signup.html';
+    });
 });
 
