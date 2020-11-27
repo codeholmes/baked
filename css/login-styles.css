@@ -1,19 +1,16 @@
 .main-container {
-    height: 25vh;
-    color: #fcfcfc;
+    height: 100vh;
+    background-color: white;
     display: flex;
 }
+
 .brand-name
 {
     position: relative;
-    width: auto;
-    height: 80px;
-    background-color: white;
+    margin-bottom: 6vh;
     color: #32595c;
     font-family:"helvetica";
-    text-align: center;
     font-size: 40px;
-    padding-top: 25px;
 }
 .login-box
 {
@@ -25,6 +22,10 @@
     font-family:"helvetica";
     text-align: center;
     font-size: 30px;
-    padding-top: 40px;
     margin:auto;
+}
+
+.welcome-text
+{
+    margin-bottom: 3vh;
 }
