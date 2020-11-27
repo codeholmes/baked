@@ -1,22 +1,17 @@
 .main-container {
-    height: 100vh;
+    height: 95vh;
     background-color: white;
     display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.brand-name
-{
-    position: relative;
-    margin-bottom: 6vh;
-    color: #32595c;
-    font-family:"helvetica";
-    font-size: 40px;
-}
 .signup-box
 {
     position: relative;
-    width: 500px;
-    height: 500px;
+    width: 350px;
+    height: 900px;
     background-color: white;
     color: #212429;
     font-family:"helvetica";
@@ -25,7 +20,45 @@
     margin:auto;
 }
 
+.brand-name
+{
+    position: relative;
+    margin-bottom: 17vh;
+    color: #32595c;
+    font-family:"helvetica";
+    font-size: 40px;
+}
+
+
 .create-account
 {
     margin-bottom: 3vh;
+}
+
+input
+{
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    margin: 10px;
+    border-radius: 6px;
+    border: 1px solid grey;
+    padding: 12px;
+    font-size: 0.8vw;
+    font-family: "helvetica";
+}
+
+button 
+{
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    margin: 10px;
+    color:white;
+    border-radius: 6px;
+    background-color: #449aa0;
+    border: 2px solid #497f83;
+    font-size: 0.8vw;
+    font-weight: 500;
+    cursor: pointer;;
 }

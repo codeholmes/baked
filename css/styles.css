@@ -2,6 +2,13 @@ body
 {
     background-color: #0d0d0d;
 }
+.main-container {
+    height: 100vh;
+    background-color: #0d0d0d;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
 
 .header
 {
@@ -14,13 +21,11 @@ body
     font-size: 20px;
     text-align: center;
     word-spacing: 20px;
-    align-items: center;
-
 }
 
 .align-header-text
 {
-    padding-top: 6px;;
+    padding-top: 7px;;
 }
 
 table

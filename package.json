@@ -1,0 +1,23 @@
+{
+  "name": "baked",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeholmes/baked.git"
+  },
+  "keywords": [],
+  "author": "Anish Prasad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codeholmes/baked/issues"
+  },
+  "homepage": "https://github.com/codeholmes/baked#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.0"
+  }
+}
