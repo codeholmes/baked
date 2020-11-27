@@ -44,7 +44,7 @@ input
     border-radius: 6px;
     border: 1px solid grey;
     padding: 12px;
-    font-size: 0.8vw;
+    font-size: 15px;
     font-family: "helvetica";
 }
 
@@ -58,7 +58,7 @@ button
     border-radius: 6px;
     background-color: #449aa0;
     border: 2px solid #497f83;
-    font-size: 0.8vw;
+    font-size: 15px;
     font-weight: 500;
     cursor: pointer;;
 }
