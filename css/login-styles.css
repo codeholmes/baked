@@ -23,11 +23,16 @@
 .brand-name
 {
     position: relative;
-    margin-bottom: 16vh;
+    margin-bottom: 18vh;
     color: #32595c;
     font-family:"helvetica";
     font-size: 30px;
     padding-top: 15px;
+}
+
+.brand-pointer
+{
+    cursor: pointer;
 }
 
 

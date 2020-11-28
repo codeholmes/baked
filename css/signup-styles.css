@@ -16,20 +16,24 @@
     color: #212429;
     font-family:"helvetica";
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     margin:auto;
 }
 
 .brand-name
 {
     position: relative;
-    margin-bottom: 15vh;
+    margin-bottom: 14vh;
     color: #32595c;
     font-family:"helvetica";
     font-size: 30px;
     padding-top: 15px;
 }
 
+.brand-pointer
+{
+    cursor: pointer;
+}
 
 .create-account
 {
@@ -42,12 +46,14 @@ input
     height: 40px;
     box-sizing: border-box;
     margin: 10px;
+    margin-bottom: 4px;
     border-radius: 6px;
-    border: 1px solid grey;
+    border: 1px solid Gainsboro;
     padding: 12px;
     font-size: 15px;
     font-family: "helvetica";
 }
+
 
 button 
 {
@@ -58,8 +64,20 @@ button
     color:white;
     border-radius: 6px;
     background-color: #449aa0;
-    border: 2px solid #497f83;
+    border: 1px solid #497f83;
     font-size: 15px;
     font-weight: 500;
     cursor: pointer;;
+}
+
+.password-msg
+{
+    float: left;
+    padding-left: 1vh;
+    padding-top: 0vh;
+    font-size: 11px;
+    font-weight: 400;
+    color: #B8B8B8;
+    letter-spacing: 0.4px;
+    margin-bottom: 4px;
 }

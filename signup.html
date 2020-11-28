@@ -4,6 +4,7 @@
         <title>Register | baked.</title>
         <link rel="stylesheet" href="css/signup-styles.css">
         <script src="js/jquery/jquery-3.5.1.js"></script>
+        <script src="js/jquery/login-register-jquery.js"></script>
         <script src="js/db-scripts.js"></script>
     </head>
     <body>
@@ -11,7 +12,7 @@
 
             <div class="signup-box ">
                 <div class="brand-name">
-                    <strong>baked.</strong>
+                    <strong class="brand-pointer">baked.</strong>
                 </div>
                 <div class="create-account">
                     <strong>Create Account</strong>
@@ -21,8 +22,11 @@
                         <input type="text" name="username" placeholder ="Username" required> <br>
                         <input type="text" name="email" placeholder ="Email" required> <br>
                         <input type="password" name="password" placeholder="Password" required> <br>
+                        <div class="password-msg">
+                            Must be at least 8 characters
+                        </div>
                         <input type="password" name="password" placeholder="Confirm Password" required> <br>
-                        <button id="SignupBtnColor" type="submit" name = "reg-submit-btn"> Sign Up </button>
+                        <button class="SignupBtnColor" type="submit" name = "reg-submit-btn"> Sign Up </button>
                     </form>
                 </div>
             </div>

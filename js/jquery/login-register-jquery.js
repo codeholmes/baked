@@ -1,16 +1,21 @@
 $(document).ready(function(){
 
-    $("#loginBtnColor").mouseover(function(){
-        $("#loginBtnColor").css("background-color", "black");
+    $(".LoginBtnColor").mouseover(function(){
+        $(".LoginBtnColor").css("background-color", "#497f83");
     });
-    $("#loginBtnColor").mouseout(function(){
-        $("#loginBtnColor").css("background-color", "#449aa0");
+    $(".LoginBtnColor").mouseout(function(){
+        $(".LoginBtnColor").css("background-color", "#449aa0");
     });
 
-    $("#SignupBtnColor").mouseover(function(){
-        $("#SignupBtnColor").css("background-color", "black");
+    $(".SignupBtnColor").mouseover(function(){
+        $(".SignupBtnColor").css("background-color", "#497f83");
     });
-    $("#SignupBtnColor").mouseout(function(){
-        $("#SignupBtnColor").css("background-color", "#449aa0");
+    $(".SignupBtnColor").mouseout(function(){
+        $(".SignupBtnColor").css("background-color", "#449aa0");
+    });
+
+    $(".brand-pointer").click(function()
+    {
+        window.location.href='index.php';
     });
 });
