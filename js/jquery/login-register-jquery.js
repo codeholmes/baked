@@ -18,4 +18,15 @@ $(document).ready(function(){
     {
         window.location.href='index.php';
     });
+
+    $(".Create-Account-2").click(function()
+    {
+        window.location.href='signup.html';
+    });
+
+    $(".BackToLogin-2").click(function()
+    {
+        window.location.href='login.html';
+    });
+
 });

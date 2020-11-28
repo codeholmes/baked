@@ -1,6 +1,6 @@
 body
 {
-    background-image: url("../img/login-background.png");
+    background-image: url("../img/login-background-2.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed; 
@@ -16,26 +16,39 @@ body
 .login-box
 {
     position: relative;
-    width: 40vh;
-    height: 95vh;
+    padding: 5vh;
+    width: 400px;
+    height: 400px;
     color: #212429;
+    background-color: white;
     font-family:"helvetica";
     text-align: center;
     font-size: 35px;
     margin:auto;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .brand-name
 {
-    position: relative;
-    margin-bottom: 20vh;
     margin-top: 5vh;
-    color: #32595c;
+    position: relative;
+    color: #F07373;
     font-family:"helvetica";
     font-size: 30px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
 }
 
+.getStarted
+{
+    font-size: 17px;
+    padding-top: 10px;
+    color:grey;
+    font-family: Helvetica;
+    font-weight: 100;
+}
 .brand-pointer
 {
     cursor: pointer;
@@ -45,18 +58,19 @@ body
 .welcome-text
 {
     margin-bottom: 3vh;
+
 }
 
 input
 {
     width: 100%;
-    height: 40px;
+    height: 45px;
+    margin-bottom: 10px;
     box-sizing: border-box;
-    margin: 10px;
     border-radius: 6px;
     border: 1px solid Gainsboro;
     padding: 12px;
-    font-size: 15px;
+    font-size: 17px;
     font-family: "helvetica";
 }
 
@@ -65,7 +79,6 @@ button
     width: 100%;
     height: 40px;
     box-sizing: border-box;
-    margin: 10px;
     color:white;
     border-radius: 6px;
     background-color: #449aa0;
@@ -73,4 +86,39 @@ button
     font-size: 17px;
     font-weight: 500;
     cursor: pointer;;
+}
+
+.password-reset
+{
+    float: left;
+    padding-left: 1vh;
+    padding-top: 0vh;
+    font-size: 12px;
+    color: #303030;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+hr
+{
+    margin-top: 4vh; 
+    margin-bottom: 2vh;
+}
+.Create-Account-1
+{
+    padding-left: 1vh;
+    padding-top: 0vh;
+    font-size: 15px;
+    color: grey;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    margin-bottom: 8px;
+}
+
+.Create-Account-2
+{
+    color: #449aa0;
+    cursor: pointer;
 }
