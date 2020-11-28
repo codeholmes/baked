@@ -1,6 +1,12 @@
+body
+{
+    background-image: url("../img/login-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
 .main-container {
     height: 95vh;
-    background-color: white;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
@@ -10,24 +16,24 @@
 .login-box
 {
     position: relative;
-    width: 350px;
-    height: 900px;
-    background-color: white;
+    width: 40vh;
+    height: 95vh;
     color: #212429;
     font-family:"helvetica";
     text-align: center;
     font-size: 35px;
     margin:auto;
+    border-radius: 5px;
 }
 
 .brand-name
 {
     position: relative;
-    margin-bottom: 18vh;
+    margin-bottom: 20vh;
+    margin-top: 5vh;
     color: #32595c;
     font-family:"helvetica";
     font-size: 30px;
-    padding-top: 15px;
 }
 
 .brand-pointer
