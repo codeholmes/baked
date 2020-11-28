@@ -4,13 +4,6 @@ $(document).ready(function(){
         alert("You're in a Home Page!");
     });
 
-    $("#headerButton1").mouseover(function(){
-        $("#headerButton1").css("color", "#449aa0");
-    });
-    $("#headerButton1").mouseout(function(){
-        $("#headerButton1").css("color", "grey");
-    });
-
     $("#headerButton2").mouseover(function(){
         $("#headerButton2").css("color", "#449aa0");
     });

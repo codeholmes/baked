@@ -23,10 +23,11 @@
 .brand-name
 {
     position: relative;
-    margin-bottom: 17vh;
+    margin-bottom: 15vh;
     color: #32595c;
     font-family:"helvetica";
-    font-size: 40px;
+    font-size: 30px;
+    padding-top: 15px;
 }
 
 
