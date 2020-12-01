@@ -7,13 +7,18 @@ function UsernameLengthValidate(UsrName)
             alert("Username must be more than 4 characters");
             return false;
         }
-    if ((UsrName.length) >= 15)
+    else if ((UsrName.length) >= 15)
     {
         {
             alert("Username must be less than 15 characters");
             return false;
         }
     }
+    else
+    {
+        return true;
+    }
+
 }
 
 function UsernameCharacterValidate(UsrName)
@@ -26,6 +31,10 @@ function UsernameCharacterValidate(UsrName)
             alert("Invalid username. Only alphanumeric values allowed.");
             return false;
         }
+    else
+    {
+        return true;
+    }
 }
 
 function EmailValidate(Email)
@@ -38,6 +47,10 @@ function EmailValidate(Email)
             alert("Invalid Email.");
             return false;
         }
+    else
+    {
+        return true;
+    }
 }
 
 function PasswordLengthValidate(Pwt)
@@ -47,6 +60,10 @@ function PasswordLengthValidate(Pwt)
             alert("Password must me greater than 8 characters.");
             return false;
         }
+    else
+    {
+        return true;
+    }
 }
 
 function ConfirmPasswordValidate(Pwt1, Pwt2)
@@ -56,6 +73,10 @@ function ConfirmPasswordValidate(Pwt1, Pwt2)
             alert("Password didn't matched.");
             return false;
         }
+    else
+    {
+        return true;
+    }
 }
 
 function ValidateGodmode()
