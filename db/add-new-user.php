@@ -6,10 +6,10 @@ if (isset($_POST['reg-submit-btn']))
 
     $username = $_POST['username'];
     $email = $_POST['email'];
-    $password = $_POST['password'];
+    $password = $_POST['password1'];
 
     $salt = $_ENV["SALT"];
-    $hashed = md5($password.$salt);
+    $hashed = md5($password1.$salt);
 
     if(!empty($username) && !empty($email)  && !empty($password))
     {

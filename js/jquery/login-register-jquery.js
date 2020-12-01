@@ -16,7 +16,7 @@ $(document).ready(function(){
 
     $(".brand-pointer").click(function()
     {
-        window.location.href='index.php';
+        window.location.href='index.html';
     });
 
     $(".Create-Account-2").click(function()
@@ -28,5 +28,4 @@ $(document).ready(function(){
     {
         window.location.href='login.html';
     });
-
 });

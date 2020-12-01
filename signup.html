@@ -6,6 +6,8 @@
         <script src="js/jquery/jquery-3.5.1.js"></script>
         <script src="js/jquery/login-register-jquery.js"></script>
         <script src="js/db-scripts.js"></script>
+        <script src="js/signup-validate.js"></script>
+
     </head>
     <body>
         <div class= "main-container">
@@ -15,17 +17,20 @@
             <div class="signup-box ">
                 <div class="create-account">
                     <strong>Create Account</strong>
+                    <div class="getStarted">
+                        Signup to get started
+                    </div>
                 </div>
                 <div>
-                    <form action="db/add-new-user.php" method="POST">
-                        <input type="text" name="username" placeholder ="Username" required> <br>
-                        <input type="text" name="email" placeholder ="Email" required> <br>
-                        <input type="password" name="password" placeholder="Password" required> <br>
+                    <form name="SignupForm" action ="db/add-new-user.php" onsubmit="return ValidateGodmode();" method="POST" >
+                        <input id="username-id" type="text" name="username" placeholder ="Username" required> <br>
+                        <input id="email-id" type="text" name="email" placeholder ="Email" required> <br>
+                        <input id="password-id" type="password" name="password1" placeholder="Password" required"> <br>
                         <div class="password-msg">
                             Must be at least 8 characters
                         </div>
-                        <input type="password" name="password" placeholder="Confirm Password" required> <br>
-                        <button class="SignupBtnColor" type="submit" name = "reg-submit-btn"> Sign Up </button>
+                        <input id="passwordRepeat-id" type="password" name="password2" placeholder="Confirm Password" required> <br>
+                        <button class="SignupBtnColor" type="submit" name = "reg-submit-btn" value="submit"> Sign Up </button>
                         <div>
                             <hr>
                         </div>
