@@ -1,3 +1,12 @@
+<?php
+
+if ($_SERVER["HTTP_REFERER"] == "http://localhost/baked/signup.html")
+    {
+        echo "<script> alert('Signup Successfully. Login to continue.') </script>";
+    }
+else {}
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -7,6 +16,9 @@
         <script src="js/jquery/login-register-jquery.js"></script>
     </head>
     <body>
+        <div>
+        </div>
+
         <div class="main-container">
             <div class="brand-name">
                 <strong class="brand-pointer">baked.</strong>
@@ -20,9 +32,9 @@
                     </div>
                 </div>
                 <div>
-                    <form action="">
-                        <input type="text" name="phone" placeholder ="Email" required> <br>
-                        <input type="password" name="pwd" placeholder="Password" required> <br>
+                    <form role="form" action="php/login-user.php" method="POST">
+                        <input type="text" name="username" placeholder ="Username" required> <br>
+                        <input type="password" name="password" placeholder="Password" required> <br>
                         <div class="password-reset">
                             I forget my password.
                         </div>
@@ -39,3 +51,4 @@
         </div>
     </body>
 </html>
+

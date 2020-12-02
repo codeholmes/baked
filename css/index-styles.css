@@ -1,15 +1,11 @@
-*
-{
-    background-image: url("../img/home-background-1.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-}
 body
 {
     display: flex;
     justify-content: center;
     flex-flow: column nowrap;
+    background-image: url("../img/home-background-2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 nav
 {
@@ -19,6 +15,12 @@ nav
     font-weight: bold;
     min-height: 10vh;
     font-family: Helvetica;
+    border-bottom: 1px solid rgba(255,255,255,.25);
+}
+
+.main-container {
+    height: auto;
+    width: auto;
 }
 
 .nav-links-1
@@ -63,7 +65,7 @@ nav
 .nav-login-register
 { 
     font-family: helvetica;
-    padding: 8px;
+    padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
     font-size: 20px;
@@ -74,13 +76,14 @@ nav
     cursor: pointer;
     transition-duration: 0.2s;
 }
+
 #headerButton6, #headerButton7
 {
-    background-color: #449aa0;
+    background-color: #021517;
 }
 
 .accountButton {
-    border: 2px solid #449aa0;
+    border: 2px solid #264547;
   }
 
 .account-spacing
@@ -111,10 +114,71 @@ nav
 .body-links-1
 {
     display: flex;
-    justify-content: space-around;
-    align-items: left;
-    width: 10%;
-    margin-left: 10vh;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: auto;
     font-size: 20px;
+    padding-top: 50px;
 }
 
+.body-exploreO2
+{ 
+    background-color: #264547;
+    font-family: helvetica;
+    padding: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 25px;
+    border: none;
+    border-radius: 7px;
+    border-color: #264547;
+    color: #449aa0;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.exploreO2Button {
+    border: 5px solid #264547;
+  }
+
+.exploreO2-spacing
+{
+    margin-left: 40px;
+    padding: 18px;
+    background-color: #021517;
+}
+
+#two
+{
+    font-size: 35px;
+}
+
+.compress-or-convert
+{
+    margin-top: 200px;
+    color: #CB4444;
+    font-family:"helvetica";
+    font-size: 65px;
+    text-align: center;
+    align-items: center;
+}
+
+.h2o-box
+{
+    margin: auto;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: grey;
+}
+
+.o2-box
+{
+    margin: auto;
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    background-color: grey;
+}

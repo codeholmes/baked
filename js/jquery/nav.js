@@ -34,25 +34,25 @@ $(document).ready(function(){
 
     $("#headerButton6").mouseover(function(){
         $(this).css("background-color", "#449aa0");
-        $(this).css("color", "white");
+        $(this).css("color", "rgb(231, 222, 222)");
     });
     $("#headerButton6").mouseout(function(){
-        $(this).css("background-color", "aliceblue");
+        $(this).css("background-color", "#021517");
         $(this).css("color", "#449aa0");
     });
 
     $("#headerButton7").mouseover(function(){
         $(this).css("background-color", "#449aa0");
-        $(this).css("color", "white");
+        $(this).css("color", "rgb(231, 222, 222)");
     });
     $("#headerButton7").mouseout(function(){
-        $(this).css("background-color", "aliceblue");
+        $(this).css("background-color", "#021517");
         $(this).css("color", "#449aa0");
     });
 
     $("#headerButton6").click(function()
     {
-        window.location.href='login.html';
+        window.location.href='login.php';
     });
 
     $("#headerButton7").click(function()

@@ -6,19 +6,20 @@ if (isset($_POST['reg-submit-btn']))
 
     $username = $_POST['username'];
     $email = $_POST['email'];
-    $password = $_POST['password1'];
+    $password1 = $_POST['password1'];
+    $password2 = $_POST['password2'];
+    
+    $newUser = $_SERVER["HTTP_REFERER"];
 
-    $salt = $_ENV["SALT"];
-    $hashed = md5($password1.$salt);
-
-    if(!empty($username) && !empty($email)  && !empty($password))
+    if(!empty($username) && !empty($email)  && !empty($password1) && !empty($password2))
     {
-    $query ="INSERT into user_account (username, email, password) VALUES ('$username', '$email','$hashed');";
-
+    $query ="INSERT into user_account (username, email, password) VALUES ('$username', '$email','$password2');";
+    
     if (mysqli_query($conn, $query)) {
-    echo "Congrats! Registration Successfull!";
+    header("Location: http://localhost/baked/login.php");
+    exit;
     } else {
-    echo "Error: " . $query . "<br>" . mysqli_error($conn);
+    echo "Error: ".$query."<br>" . mysqli_error($conn);
     }
     }
 }

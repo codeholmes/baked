@@ -18,7 +18,6 @@ function UsernameLengthValidate(UsrName)
     {
         return true;
     }
-
 }
 
 function UsernameCharacterValidate(UsrName)
@@ -81,7 +80,7 @@ function ConfirmPasswordValidate(Pwt1, Pwt2)
 
 function ValidateGodmode()
 {
-    var valid= true;
+    let valid= true;
     valid &= UsernameLengthValidate(document.forms["SignupForm"]["username"].value);
     valid &= UsernameCharacterValidate(document.forms["SignupForm"]["username"].value);
     valid &= EmailValidate(document.forms["SignupForm"]["email"].value);
