@@ -4,23 +4,25 @@ if ($_SERVER["HTTP_REFERER"] == "http://localhost/baked/login.php")
     {
         echo "<script> alert('Invalid username or password. Try again.') </script>";
     }
-else {}
 
-if ($_SERVER["HTTP_REFERER"] == "http://localhost/baked/signup.html")
+else if ($_SERVER["HTTP_REFERER"] == "http://localhost/baked/signup.html")
     {
-        echo "<script> alert('Signup Successfully. Login to continue.') </script>";
+        echo "<script> alert('Signup Successful. Login to continue.') </script>";
     }
-else {}
 
-if ($_SERVER["HTTP_REFERER"] == "http://localhost/baked/resources/login.inc.php")
+else if ($_SERVER["HTTP_REFERER"] == "http://localhost/baked/resources/login.inc.php")
     {
-        echo "<script> alert('Logout Successfully!') </script>";
+        echo "<script> alert('Logout Successful!') </script>";
     }
-else {}
 
-if ($_SERVER["HTTP_REFERER"] == "http://localhost/baked/resources/setting.php")
+else if ($_SERVER["HTTP_REFERER"] == "http://localhost/baked/resources/setting.php")
     {
-        echo "<script> alert('Account Terminated Successfully') </script>";
+        echo "<script> alert('Action Successful') </script>";
+    } 
+
+else if ($_SERVER["HTTP_REFERER"] == "http://localhost/baked/resources/upload-media.php")
+    {
+        echo "<script> alert('Action Successful') </script>";
     } 
 else {}
 ?>

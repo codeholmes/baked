@@ -64,10 +64,14 @@ include('../pages/header.php'); ?>
                 </div>
                 <div hidden class="wallet-box-1-color">
                     <div class="amount-title" >Amount left</div>
-                    <div class="amount"> 999 INR </div>
+                    <div class="amount">
+                        <?php $getAmount = mysqli_fetch_assoc(mysqli_query($conn, "SELECT amount FROM user_wallet wallet, user_account user WHERE user.username='".($_SESSION['username'])."' AND user.user_id = wallet.user_id"));
+                        echo $getAmount["amount"]?> INR 
+                    </div>
                         <div class="wallet-title" >Add money with coupon</div>
-                        <div> <input class="coupon-code" type="text" name ="CouponCode" placeholder="Enter coupon code">
-                        <input class="add-money" type="submit" name="AddMoney" value="Add">
+                        <div>
+                            <input class="coupon-code" type="text" name ="CouponCode" placeholder="Enter coupon code">
+                            <input class="add-money" type="submit" name="AddMoney" value="Add">
                         </div>
 
                 </div>

@@ -73,9 +73,9 @@ $(document).ready(function(){
     {
         window.location.href="../resources/setting.php";
     });
-    $(".homeLink").click(function()
+    $("#headerButton5").click(function()
     {
-        window.location.href="../index.html";
+        window.location.href="../resources/upload-media.php";
 
     });
     $(".loginHomeLink").click(function()

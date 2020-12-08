@@ -1,11 +1,7 @@
 <?php
-if ($_SERVER["HTTP_REFERER"] != "http://localhost/baked/resources/login.inc.php")
-    {
-        header("location: http://localhost/baked/login.php");
-        exit;
-    }
-
-if ($_SERVER["HTTP_REFERER"] == "http://localhost/baked/resources/login.inc.php")
+if (($_SERVER["HTTP_REFERER"] == "http://localhost/baked/resources/login.inc.php")
+    || ($_SERVER["HTTP_REFERER"] == "http://localhost/baked/resources/setting.php")
+    || ($_SERVER["HTTP_REFERER"] == "http://localhost/baked/resources/upload-media.php"))
     {
         session_start();
         unset($_SESSION["username"]);
@@ -14,4 +10,9 @@ if ($_SERVER["HTTP_REFERER"] == "http://localhost/baked/resources/login.inc.php"
         header('location: http://localhost/baked/login.php');
         exit;
     }
+else
+{
+    header("location: http://localhost/baked/login.php");
+    exit;
+}
 ?>
