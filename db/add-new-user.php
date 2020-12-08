@@ -19,7 +19,7 @@ if (isset($_POST['reg-submit-btn']))
     header("Location: http://localhost/baked/login.php");
     exit;
     } else {
-    echo "Error: ".$query."<br>" . mysqli_error($conn);
+    echo "Error: ".$query."<br>".mysqli_error($conn);
     }
     }
 }

@@ -54,7 +54,7 @@ function EmailValidate(Email)
 
 function PasswordLengthValidate(Pwt)
 {
-    if (!((Pwt.length) > 8))
+    if (!((Pwt.length) > 7))
         {
             alert("Password must me greater than 8 characters.");
             return false;

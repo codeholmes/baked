@@ -6,31 +6,26 @@ if ($_SESSION['username'] != '')
 }
 else
 {
-    //echo "Something went wrong!";
+    //echo "Something went wrong! Login again.";
     header('location: http://localhost/baked/login.php');
     exit;
 }
-?>
+include('../pages/header.php'); ?>
 
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Home | baked.</title>
         <link rel="stylesheet" href="../css/login-inc-styles.css">
+        <script src="../js/jquery/jquery-3.5.1.js"></script>
+        <script src="../js/jquery/login-inc.js"></script>
     </head>
     <body>
-        <nav>
-            <h4 class="logo font-weight">baked<strong>O</strong><sub id="two">2</sub></h4>
-            <h4></h4>
-            <h4 class="nav-account font-weight">Account</h4>
-            <form action="../php/logout-user.php" method="POST">
-                <input type="submit" value="logout" class="nav-account font-weight">
-            </form>
-        </nav>
-
-        <div class="main-container">
-            <div class="o2-box-1">
-
-            </div>
+        <div class="login-msg">
+            Heyo <?php echo ($_SESSION['username']) ?>, <br>
+            Try our newly launched <br>
+            media-compressor <span class="color-tag"> O<sub id ="two">2</sub> </span>
         </div>
+        <div class="subs-now"> <strong id="subsNow" > Subscribe now</strong></div>
     </body>
 </html>

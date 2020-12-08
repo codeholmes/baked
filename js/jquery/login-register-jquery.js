@@ -26,6 +26,6 @@ $(document).ready(function(){
 
     $(".BackToLogin-2").click(function()
     {
-        window.location.href='login.html';
+        window.location.href='login.php';
     });
 });

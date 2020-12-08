@@ -39,4 +39,3 @@ if ($_SERVER["HTTP_REFERER"] != "http://localhost/baked/login.php")
             exit;
         }
     }
-?>

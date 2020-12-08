@@ -1,9 +1,27 @@
 <?php
 
+if ($_SERVER["HTTP_REFERER"] == "http://localhost/baked/login.php")
+    {
+        echo "<script> alert('Invalid username or password. Try again.') </script>";
+    }
+else {}
+
 if ($_SERVER["HTTP_REFERER"] == "http://localhost/baked/signup.html")
     {
         echo "<script> alert('Signup Successfully. Login to continue.') </script>";
     }
+else {}
+
+if ($_SERVER["HTTP_REFERER"] == "http://localhost/baked/resources/login.inc.php")
+    {
+        echo "<script> alert('Logout Successfully!') </script>";
+    }
+else {}
+
+if ($_SERVER["HTTP_REFERER"] == "http://localhost/baked/resources/setting.php")
+    {
+        echo "<script> alert('Account Terminated Successfully') </script>";
+    } 
 else {}
 ?>
 
@@ -14,6 +32,7 @@ else {}
         <link rel="stylesheet" href="css/login-styles.css">
         <script src="js/jquery/jquery-3.5.1.js"></script>
         <script src="js/jquery/login-register-jquery.js"></script>
+        <script src="js/login-validate"></script>
     </head>
     <body>
         <div>
@@ -32,7 +51,7 @@ else {}
                     </div>
                 </div>
                 <div>
-                    <form role="form" action="php/login-user.php" method="POST">
+                    <form name="LoginForm" action="php/login-user.php" onsubmit="return ValidateLogin();" method="POST">
                         <input type="text" name="username" placeholder ="Username" required> <br>
                         <input type="password" name="password" placeholder="Password" required> <br>
                         <div class="password-reset">

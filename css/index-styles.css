@@ -1,9 +1,16 @@
 body
 {
+    margin: 0px;
+    background-color: #BFBCB5;
+}
+
+.app-container
+{
     display: flex;
-    justify-content: center;
     flex-flow: column nowrap;
-    background-image: url("../img/home-background-2.png");
+    justify-content: space-around;
+    background-image: url("../img/home-background-3.jpg");
+    
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -98,10 +105,10 @@ nav
 
 .landing-page
 {
-    margin-top: 100px;
+    margin-top: 8vw;
     color: #CB4444;
     font-family:"helvetica";
-    font-size: 65px;
+    font-size: 4vw;
     text-align: center;
     align-items: center;
 }
@@ -152,33 +159,65 @@ nav
 
 #two
 {
-    font-size: 35px;
+    font-size: 2.5vw;
 }
-
+#spaccccccce
+{
+    margin-bottom: 17vw;
+}
 .compress-or-convert
 {
-    margin-top: 200px;
     color: #CB4444;
     font-family:"helvetica";
-    font-size: 65px;
+    font-size: 5vw;
     text-align: center;
     align-items: center;
 }
 
-.h2o-box
-{
-    margin: auto;
-    position: relative;
-    width: 500px;
-    height: 500px;
-    background-color: grey;
-}
-
-.o2-box
+.product-box
 {
     margin: auto;
     position: relative;
     width: 1000px;
+    height: 700px;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.h2o-box
+{
+    margin-left: 15%;
+    position: absolute;
+    margin-top: 10%;
+    width: 300px;
+    height: 400px;
+    background-color: #021516;
+    border-radius: 10px;
+}
+
+.o2-box
+{
+    margin-left: 55%;
+    position: absolute;
+    margin-top: 10%;
+    width: 300px;
+    height: 400px;
+    background-color: #021516;
+    border-radius: 10px;
+}
+
+.footer
+{
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    background-image: url("../img/home-background-footer-3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.spaccccccce-2
+{
     height: 500px;
-    background-color: grey;
 }

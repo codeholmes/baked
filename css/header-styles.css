@@ -1,0 +1,130 @@
+nav
+{
+    width: 100%;
+}
+.logo
+{
+    font-family: Helvetica;
+    font-size: 30px;
+    color: #449aa0;  
+    margin-left: 15vw;
+    margin-right: 5vw;
+    margin-top: 50px;
+}
+
+.nav-links
+{
+    display: flex;
+    justify-content: space-around;
+    font-family: Helvetica;
+    font-size: 20px;
+    color: grey;
+    
+}
+.homeLink, .loginHomeLink
+{
+    cursor: pointer;
+}
+.nav-links-2
+{
+    font-weight: bold;
+    margin-top: 55px;
+    margin-left: 15px;
+}
+
+.dropdown-container
+{
+    position: relative;
+    width: 120px;
+    height: 200px;
+    margin-top: 50px;
+    margin-right: 10vw;
+    /*background-color: #6e778078;*/
+    color: rgb(218, 213, 213);
+}
+
+.hello-user
+{
+    margin-right: 5px;
+    margin-left: 50px;
+    margin-top: 50px;
+    float: right;
+    font-family: Helvetica;
+    border-radius: 30px;
+    position: relative;
+    width: 200px;
+    height: 35px;
+    background-color: #7623DE;
+    color: rgb(218, 213, 213);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 4px;
+    font-weight: bold;
+}
+
+.nav-account
+{
+    transition-duration: 0.2s;
+    position: absolute;
+    display: block;
+    font-family: Helvetica;
+    border-radius: 30px;
+    position: relative;
+    width: 120px;
+    height: 30px;
+    background-color: #6e778078;
+    color: rgb(218, 213, 213);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#profileID
+{
+    padding-top: 5x;
+}
+
+.account-content
+{
+    position: absolute;
+    width: 120px;
+    height: 150px;
+    background-color: #6e778078;
+    border-radius: 10px;
+    margin-top: 10px;
+    /*font-weight: bold;*/
+}
+
+.setting
+{
+    color: rgb(218, 213, 213);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 7px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.logout
+{
+    font-family: Helvetica;
+    border-radius: 30px;
+    position: relative;
+    width: 100px;
+    height: 25px;
+    background-color: #a53d54;
+    color: rgb(218, 213, 213);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
