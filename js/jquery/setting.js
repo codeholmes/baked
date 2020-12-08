@@ -92,4 +92,10 @@ $(document).ready(function(){
     {
         window.location.href="../php/setting-delete-user.php";
     });
+
+    $("#UpdateUsername").click(function()
+    {
+        window.location.href="../php/update-account.php";
+    });
+
 });

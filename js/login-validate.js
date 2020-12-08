@@ -38,3 +38,10 @@ function ValidateLogin()
     valid &= PasswordLengthValidate(document.forms["LoginForm"]["password"].value);
     return valid? true:false;
 } 
+
+function ValidateUpdate()
+{
+    let valid= true;
+    valid &= UsernameLengthValidate(document.forms["UpdateForm"]["NewUsername"].value);
+    return valid? true:false;
+} 

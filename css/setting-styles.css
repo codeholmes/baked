@@ -248,18 +248,20 @@ button
     margin-left: 50px;
 }
 
-
-/*___Subs styles___*/
-
 .add-money
 {
     color: white;
     width: 80px;
+    height: 28px;
     background-color: #7623DE;
     border-radius: 20px;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bold;
+    cursor: pointer;
 }
+
+
+/*___Subs styles___*/
 
 .subs-title
 {
