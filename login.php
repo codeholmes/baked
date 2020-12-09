@@ -22,7 +22,19 @@ else if ($_SERVER["HTTP_REFERER"] == "http://localhost/baked/resources/setting.p
 
 else if ($_SERVER["HTTP_REFERER"] == "http://localhost/baked/resources/upload-media.php")
     {
-        echo "<script> alert('Action Successful') </script>";
+        echo "<script> alert('Logout Successful') </script>";
+    } 
+else if ($_SERVER["HTTP_REFERER"] == "http://localhost/baked/resources/compress-media.php")
+    {
+        echo "<script> alert('Logout Successful') </script>";
+    }
+else if ($_SERVER["HTTP_REFERER"] == "http://localhost/baked/resources/convert-media.php")
+    {
+        echo "<script> alert('Logout Successful') </script>";
+    } 
+else if ($_SERVER["HTTP_REFERER"] == "http://localhost/baked/resources/download-media.php")
+    {
+        echo "<script> alert('Logout Successful') </script>";
     } 
 else {}
 ?>
@@ -31,6 +43,7 @@ else {}
 <html>
     <head>
         <title>Sign in | baked.</title>
+        <link rel="icon" href="img/favicon.ico" type="image/ico">
         <link rel="stylesheet" href="css/login-styles.css">
         <script src="js/jquery/jquery-3.5.1.js"></script>
         <script src="js/jquery/login-register-jquery.js"></script>

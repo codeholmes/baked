@@ -16,14 +16,14 @@ include('../pages/header.php'); ?>
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Upload Media</title>
+        <title>Convert Media</title>
         <link rel="icon" href="../img/favicon.ico" type="image/ico">
-        <link rel="stylesheet" href="../css/upload-media-styles.css">
+        <link rel="stylesheet" href="../css/convert-media-styles.css">
         <script src="../js/jquery/jquery-3.5.1.js"></script>
         <script src="../js/jquery/upload-media.js"></script>
     </head>
     <body>
-        <div class="upload-msg"> Upload media to compress or convert! </div>
+        <div class="upload-msg"> Upload media to start Conversion! </div>
 
         <div class="upload-container">
             <form name="UploadForm" action="" method="POST">
@@ -32,7 +32,7 @@ include('../pages/header.php'); ?>
                 Browse
                 </label>
                 <br>
-                <button class="uploadButton" type="submit" name = "reg-submit-btn" value="submit"> Upload</button>
+                <button class="convertButton" type="submit" name = "convertButton" value="submit"> Convert</button>
             </form>
         </div>
     </body>

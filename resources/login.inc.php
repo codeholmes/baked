@@ -16,6 +16,7 @@ include('../pages/header.php'); ?>
 <html>
     <head>
         <title>Home | baked.</title>
+        <link rel="icon" href="../img/favicon.ico" type="image/ico">
         <link rel="stylesheet" href="../css/login-inc-styles.css">
         <script src="../js/jquery/jquery-3.5.1.js"></script>
         <script src="../js/jquery/login-inc.js"></script>

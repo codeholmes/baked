@@ -106,7 +106,7 @@ nav
 .landing-page
 {
     margin-top: 8vw;
-    color: #CB4444;
+    color: whitesmoke;
     font-family:"helvetica";
     font-size: 4vw;
     text-align: center;
@@ -163,12 +163,12 @@ nav
 }
 #spaccccccce
 {
-    margin-bottom: 17vw;
+    margin-bottom: 20vw;
 }
 .compress-or-convert
 {
-    color: #CB4444;
-    font-family:"helvetica";
+    color: #021517;
+    font-family:helvetica;
     font-size: 5vw;
     text-align: center;
     align-items: center;
@@ -184,8 +184,13 @@ nav
     border-radius: 10px;
 }
 
-.h2o-box
+.o2-box
 {
+    background-image: url("../img/O2.png");
+    background-position-x: center;
+    background-position-y: 40px;
+    background-size: 180px;
+    background-repeat: no-repeat;
     margin-left: 15%;
     position: absolute;
     margin-top: 10%;
@@ -195,8 +200,14 @@ nav
     border-radius: 10px;
 }
 
-.o2-box
+
+.h2o-box
 {
+    background-image: url("../img/H2O.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 40px;
+    background-size: 180px;
     margin-left: 55%;
     position: absolute;
     margin-top: 10%;
@@ -205,6 +216,47 @@ nav
     background-color: #021516;
     border-radius: 10px;
 }
+
+.product-title-1
+{
+    color: #449aa0;
+    font-size:30px;
+    margin-top: 230px;
+    margin-left: 30px;
+    font-family:Helvetica;
+    font-weight: bold;
+}
+
+.product-title-2
+{
+    color: #449aa0;
+    font-size:30px;
+    margin-top: 230px;
+    margin-left: 30px;
+    font-family:Helvetica;
+    font-weight: bold;
+}
+
+.product-tagline-1
+{
+    font-size:30px;
+    margin-left: 30px;
+    font-family:Helvetica;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #CB4444;
+}
+
+.product-tagline-2
+{
+    font-size:30px;
+    margin-left: 30px;
+    font-family:Helvetica;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #CB4444;
+}
+
 
 .footer
 {
@@ -219,5 +271,35 @@ nav
 
 .spaccccccce-2
 {
-    height: 500px;
+    height: 600px;
+}
+
+.footer-logo
+{
+    position: absolute;
+    margin-left:47%;
+    font-size: 30px;
+    color: #7623DE;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 150px;
+}
+
+.footer-links
+{
+    position: absolute;
+    margin-top:100px;
+    margin-left:35%;
+    font-size: 20px;
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tab {
+    margin-right: 2.5em;
+   }
+
+.pointer
+{
+    cursor: pointer;
 }

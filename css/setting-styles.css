@@ -4,13 +4,13 @@ body
 }
 
 .main-container {
-    margin-top: -80px;
+    margin-top: -90px;
     margin-left: 15vw;
     position: absolute;
     width: 930px;
     height: 500px;
     border-radius: 20px;
-   background-color: ;
+   background-color:;
 }
 
 .box-0
@@ -94,7 +94,7 @@ body
     margin-top: 70px;
     margin-left: 330px;
     height: 350px;
-    background-color: #7623DE;
+    background-color: #6e778078;
     border-radius: 20px;
     border: 0px;
 }
@@ -106,7 +106,7 @@ body
     margin-top: 70px;
     margin-left: 330px;
     height: 350px;
-    background-color: #F07373;
+    background-color: #6e778078;
     border-radius: 20px;
     border: 0px;
 }
@@ -130,7 +130,7 @@ body
     margin-top: 70px;
     margin-left: 330px;
     height: 350px;
-    background-color: #35C9AE;
+    background-color: #6e778078;
     border-radius: 20px;
     border: 0px;
 }
@@ -144,11 +144,11 @@ body
 .myAccount
 {
     color: whitesmoke;
-    margin-top: 80px;
+    margin-top: 60px;
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .myAccountContent
@@ -156,6 +156,11 @@ body
     color: rgb(165, 162, 162);
     font-size: 20px;
     font-family: Helvetica;
+}
+
+.marginBottom
+{
+    margin-bottom: 10px;
 }
 
 input
@@ -173,12 +178,13 @@ button
     border-radius: 20px;
     border: 0px;
     padding: 7px;
-    background-color: #449aa0;
+    background-color: #44C387;
+    cursor: pointer;
 }
 
 .UsernameFloat
 {
-    margin-left: 100px;
+    margin-left: 139px;
 }
 .EmailFloat
 {
@@ -277,9 +283,9 @@ button
 
 .setting-title
 {
-    color: black;
-    margin-top: 30px;
-    font-size: 25px;
+    color: whitesmoke;
+    margin-top: 100px;
+    font-size: 27px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     margin-left: 50px;
@@ -287,10 +293,10 @@ button
 
 .setting-deeds
 {
-    color: rgb(49, 44, 44);
+    color: rgb(199, 199, 199);
     margin-top: 10px;
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-family: Helvetica;
     margin-left: 50px;
 }
 

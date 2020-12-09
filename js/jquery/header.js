@@ -27,6 +27,9 @@ $(document).ready(function(){
     $("#headerButton4").mouseout(function(){
         $(this).css("color", "grey");
     });
+    $("#headerButton5").click(function(){
+        $(this).css("color", "#449aa0");
+    });
 
     $("#headerButton5").mouseover(function(){
         $(this).css("color", "#449aa0");
@@ -73,9 +76,32 @@ $(document).ready(function(){
     {
         window.location.href="../resources/setting.php";
     });
+    $("#walletID").click(function()
+    {
+        window.location.href="../resources/setting.php";
+    });
+    $("#subsID").click(function()
+    {
+        window.location.href="../resources/setting.php";
+    });
     $("#headerButton5").click(function()
     {
         window.location.href="../resources/upload-media.php";
+
+    });
+    $("#headerButton2").click(function()
+    {
+        window.location.href="../resources/compress-media.php";
+
+    });
+    $("#headerButton3").click(function()
+    {
+        window.location.href="../resources/convert-media.php";
+
+    });
+    $("#headerButton4").click(function()
+    {
+        window.location.href="../resources/download-media.php";
 
     });
     $(".loginHomeLink").click(function()

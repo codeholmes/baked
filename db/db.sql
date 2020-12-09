@@ -5,6 +5,8 @@ CREATE TABLE `user_account` (
 `password` varchar(100) NOT NULL
 )
 
+ALTER TABLE user_account add name varchar(30);
+
 CREATE TABLE `user_wallet` (
 `user_id` int NOT NULL,
 `amount` int DEFAULT 0

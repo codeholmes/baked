@@ -15,6 +15,7 @@ include('../pages/header.php'); ?>
 <!DOCTYPE html>
 <html>
     <head>
+    <link rel="icon" href="../img/favicon.ico" type="image/ico">
         <link rel="stylesheet" href="../css/setting-styles.css">
         <script src="../js/jquery/jquery-3.5.1.js"></script>
         <script src="../js/jquery/setting.js"></script>
@@ -39,31 +40,38 @@ include('../pages/header.php'); ?>
                         <div class ="myAccountContent">
                             <?php
                             require_once('../db/db-conn.php');
-                            $getUsername = mysqli_fetch_assoc(mysqli_query($conn, "SELECT username FROM user_account WHERE username='".($_SESSION['username'])."'"));
+                            $getName = mysqli_fetch_assoc(mysqli_query($conn, "SELECT name FROM user_account WHERE username='".($_SESSION['username'])."'"));
                             ?>
+                            <div class ="marginBottom">
+                                <form  name="UpdateForm" action="../php/update-account.php" onclick="return ValidateUpdate();" method="POST">
+                                    <label > Name:  </label>
+                                    <input class="UsernameFloat" name=NewName type ="text" placeholder ="<?php echo $getName["name"] ?>">
+                                    <button id="UpdateUsername" type ="submit" name="UpdateName"> Update</button> 
+                                </form>
+                            </div>
 
-                            <form name="UpdateForm" action="../php/update-account.php" onclick="return ValidateUpdate();" method="POST">
-                            <label> Username:  </label>
-                            <input class="UsernameFloat" name=NewUsername type ="text" placeholder ="<?php echo $getUsername["username"] ?>">
-                            <button id="UpdateUsername" type ="submit" name="UpdateUsername"> Update</button> 
-                            </form>
+                            <div class ="marginBottom">
+                                <form name="UpdateEmail" action="../php/update-account.php" method="POST">                   
+                                <label> Email: </label>                  
+                                    <?php
+                                    $getEmail = mysqli_fetch_assoc(mysqli_query($conn, "SELECT email FROM user_account WHERE username='".($_SESSION['username'])."'"));
+                                    ?>
+                                    <input class="EmailFloat" name=NewEmail type ="text" placeholder ="<?php echo ($getEmail["email"]); ?>">
+                                    <button id="UpdateEmail" type ="submit" name="UpdateEmail"> Update</button><br>
+                                </form>
+                            </div>
 
-                            <label> Email: </label>                      
-                            <?php
-                            $getEmail = mysqli_fetch_assoc(mysqli_query($conn, "SELECT email FROM user_account WHERE username='".($_SESSION['username'])."'"));
-                            ?>
-
-                            <input class="EmailFloat" name=NewEmail type ="text" placeholder ="<?php echo ($getEmail["email"]); ?>">
-                            <button type ="submit"> Update</button> <br>
                             <?php
                             $getPassword = mysqli_fetch_assoc(mysqli_query($conn, "SELECT password FROM user_account WHERE username='".($_SESSION['username'])."'"));
-                            ?> 
-
-                            <label> Password: </label>
-                            <input class="Password1Float" name=NewPassword1 type ="password" placeholder ="<?php echo preg_replace("|.|", "*", $getPassword["password"]);?>"><br>
-                            <label> Confirm Password: </label>
-                            <input class="Password2Float" name=NewPassword2 type ="password" placeholder ="<?php echo preg_replace("|.|", "*", $getPassword["password"]);?>">
-                            <button type ="submit"> Update</button> <br>
+                                ?>
+                            <div class ="marginBottom">
+                                <label> Password: </label>
+                                <input class="Password1Float" name=NewPassword1 type ="password" placeholder ="<?php echo preg_replace("|.|", "*", $getPassword["password"]);?>"><br>
+                            </div>
+                                <label> Confirm Password: </label>
+                                <input class="Password2Float" name=NewPassword2 type ="password" placeholder ="<?php echo preg_replace("|.|", "*", $getPassword["password"]);?>">
+                                <button type ="submit"> Update</button>
+                            
                         </div>
                     </div>
                 </div>

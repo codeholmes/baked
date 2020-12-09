@@ -10,14 +10,12 @@ else
     header('location: http://localhost/baked/login.php');
     exit;
 }
-echo "hi";
-if (isset($_POST['UpdateUsername']))
+
+if (isset($_POST['UpdateName']))
 {
-    echo "hello";
-    $NewUsername = $_POST['NewUsername'];
+    $NewName = $_POST['NewName'];
     require_once('../db/db-conn.php');
-    echo "bye";
-    $query = "UPDATE user_account SET username ='".$NewUsername."' WHERE username ='".$_SESSION['username']."' ";
+    $query = "UPDATE user_account SET name ='".$NewName."' WHERE username ='".$_SESSION['username']."' ";
     if (mysqli_query($conn, $query))
     {
         header("location: http://localhost/baked/resources/setting.php");
@@ -28,3 +26,20 @@ if (isset($_POST['UpdateUsername']))
         echo "Error: ".$query."<br>".mysqli_error($conn);
     }
 }
+
+if (isset($_POST['UpdateEmail']))
+{
+    $NewEmail = $_POST['NewEmail'];
+    require_once('../db/db-conn.php');
+    $query = "UPDATE user_account SET email ='".$NewEmail."' WHERE username ='".$_SESSION['username']."' ";
+    if (mysqli_query($conn, $query))
+    {
+        header("location: http://localhost/baked/resources/setting.php");
+        exit;
+    }
+    else
+    {
+        echo "Error: ".$query."<br>".mysqli_error($conn);
+    }
+}
+

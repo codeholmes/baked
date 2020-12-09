@@ -16,23 +16,19 @@ include('../pages/header.php'); ?>
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Upload Media</title>
+        <title>Download Media</title>
         <link rel="icon" href="../img/favicon.ico" type="image/ico">
-        <link rel="stylesheet" href="../css/upload-media-styles.css">
+        <link rel="stylesheet" href="../css/download-media-styles.css">
         <script src="../js/jquery/jquery-3.5.1.js"></script>
         <script src="../js/jquery/upload-media.js"></script>
     </head>
     <body>
-        <div class="upload-msg"> Upload media to compress or convert! </div>
+        <div class="upload-msg"> Nothing here to download! </div>
 
         <div class="upload-container">
             <form name="UploadForm" action="" method="POST">
-                <label class="browseButton">
-                <input name="UploadMedia" type="file"/>
-                Browse
-                </label>
                 <br>
-                <button class="uploadButton" type="submit" name = "reg-submit-btn" value="submit"> Upload</button>
+                <button class="downloadButton" type="submit" name = "downloadButton" value="submit"> Download</button>
             </form>
         </div>
     </body>

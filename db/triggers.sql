@@ -3,7 +3,8 @@ AFTER INSERT ON user_account
 FOR EACH ROW
 BEGIN
 INSERT INTO user_wallet (user_id)
-SELECT user_id FROM user_account;
+(SELECT user_id FROM user_account
+WHERE user_id NOT IN (SELECT user_id FROM user_wallet));
 END;//
 
 
@@ -12,6 +13,6 @@ BEFORE DELETE ON user_account
 BEGIN
 DELETE FROM user_wallet
 WHERE user_id 
-IN
+NOT IN
 (SELECT user_id FROM user_account);
 END;//
