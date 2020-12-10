@@ -60,7 +60,7 @@ input[type="file"] {
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     color: whitesmoke;
-    background-color: #7623DE;
+    background-color: grey;
     transition-duration: 0.3s;
 }
 .downloadButton:hover

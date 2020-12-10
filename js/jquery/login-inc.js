@@ -9,6 +9,6 @@ $(document).ready(function(){
 
     $(".subs-now").click(function(){
 
-            window.location.href="../resources/setting.php";
+            window.location.href="../resources/upload-media.php";
         });
 });

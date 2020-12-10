@@ -7,7 +7,7 @@ if ($_SESSION['username'] != '')
     {
         require_once('../db/db-conn.php');
 
-        $query ="UPDATE user_wallet SET amount=100 WHERE (user_wallet.user_id IN (SELECT user_id from user_account WHERE (username = '".($_SESSION['username'])."')))";
+        $query ="UPDATE user_wallet SET amount=500 WHERE (user_wallet.user_id IN (SELECT user_id from user_account WHERE (username = '".($_SESSION['username'])."')))";
         
         if (mysqli_query($conn, $query))
         {

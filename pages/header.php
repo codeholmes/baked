@@ -15,7 +15,7 @@
                 <div class= "nav-links-2"> <strong id="headerButton5" class="homeLink">Upload</strong></div>
                 <div class= "nav-links-2"> <strong id="headerButton2" class="homeLink">Compress</strong></div>
                 <div class= "nav-links-2"> <strong id="headerButton3" class="homeLink">Convert</strong></div>
-                <div class= "nav-links-2"> <strong id="headerButton4" class="homeLink">Download</strong></div>
+                <!--<div class= "nav-links-2"> <strong id="headerButton4" class="homeLink">Download</strong></div>-->
 
                 <div class="hello-user">  Hello <?php echo ($_SESSION['username']) ?>! &#128075 </div>
                 <div class="dropdown-container">

@@ -14,7 +14,7 @@ if ($_SERVER["HTTP_REFERER"] != "http://localhost/baked/login.php")
         if ($getUsername['username'])
         {
             $getPassword = mysqli_fetch_assoc(mysqli_query($conn, "SELECT password FROM user_account WHERE username='".$username."'"));
-            if ($getPassword['password'] == $password)
+            if (password_verify($password, $getPassword['password'])) // ($getPassword['password'] == $password)
             {
                 //echo "Authentication successfull";
                 session_start();

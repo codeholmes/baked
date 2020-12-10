@@ -13,7 +13,9 @@ if (isset($_POST['reg-submit-btn']))
 
     if(!empty($username) && !empty($email)  && !empty($password1) && !empty($password2))
     {
-    $query ="INSERT into user_account (username, email, password) VALUES ('$username', '$email','$password2');";
+
+    $hashed_password = password_hash($password2, PASSWORD_DEFAULT);
+    $query ="INSERT into user_account (username, email, password) VALUES ('$username', '$email','$hashed_password');";
     
     if (mysqli_query($conn, $query)) {
     header("Location: http://localhost/baked/login.php");

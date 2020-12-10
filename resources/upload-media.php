@@ -23,17 +23,20 @@ include('../pages/header.php'); ?>
         <script src="../js/jquery/upload-media.js"></script>
     </head>
     <body>
-        <div class="upload-msg"> Upload media to compress or convert! </div>
+        <div class="main-container">
+            <div class="upload-msg"> Upload media to compress or convert! </div>
 
-        <div class="upload-container">
-            <form name="UploadForm" action="" method="POST">
-                <label class="browseButton">
-                <input name="UploadMedia" type="file"/>
-                Browse
-                </label>
-                <br>
-                <button class="uploadButton" type="submit" name = "reg-submit-btn" value="submit"> Upload</button>
-            </form>
+            <div class="upload-container">
+                <form name="UploadForm" action="../php/upload-query.php" method="POST"">
+                    <label class="browseButton">
+                    <input name="UploadMedia" type="file">
+                    Browse
+                    </label>
+                    <br>
+                    <button class="uploadButton" type="submit" name = "CompressMedia" value="submit"> Compress</button>
+                    <button class="uploadButton2" type="submit" name = "ConvertMedia" value="submit"> Convert</button>
+                </form>
+            </div>
         </div>
     </body>
 </html>

@@ -27,6 +27,6 @@ include('../pages/header.php'); ?>
             Try our newly launched <br>
             media-compressor <span class="color-tag"> O<sub id ="two">2</sub> </span>
         </div>
-        <div class="subs-now"> <strong id="subsNow" > Subscribe now</strong></div>
+        <div class="subs-now"> <strong id="subsNow" > Try now</strong></div>
     </body>
 </html>

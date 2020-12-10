@@ -3,19 +3,39 @@ body
     background-color: #27292e;
 }
 
+.main-container
+{
+    margin: auto;
+    width: 1000px;
+    height: 220px;
+    background-color: ;
+    border-radius: 10px;
+    border-color: #7623DE;
+    border: 8 bold;
+    border-radius: 50px;
+    border-style: dashed;
+}
+
 .upload-msg
 {
     text-align: center;
     font-size: 40px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    margin-top: 1vw;
-    margin-bottom: 50px;
+    color: whitesmoke;
+    margin-top: 3vw;
+    margin-bottom: 40px;
+
 }
 
-input[type="file"] {
-    display: none;
+.upload-msg2
+{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(190, 73, 73);
+    margin-bottom: 50px;
 }
 
 .upload-container
@@ -26,28 +46,10 @@ input[type="file"] {
     /*background-color: tomato;*/
 }
 
-.browseButton
-{
-    border: 1px solid #ccc;
-    display: inline-block;
-    margin: auto;
-    border: 0px;
-    border-radius: 30px;
-    padding-top: 10px;
-    cursor: pointer;
-    text-align: center;
-    width: 200px;
-    height: 40px;
-    font-size: 22px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    color: whitesmoke;
-    background-color: #6e778078;
-}
 
 .convertButton
 {
-    margin-top: 30px;
+    margin-top: 40px;
     border: 1px solid #ccc;
     display: inline-block;
     border: 0px;
@@ -62,6 +64,7 @@ input[type="file"] {
     color: whitesmoke;
     background-color: #7623DE;
     transition-duration: 0.3s;
+
 }
 .convertButton:hover
 {

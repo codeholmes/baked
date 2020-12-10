@@ -23,17 +23,33 @@ include('../pages/header.php'); ?>
         <script src="../js/jquery/upload-media.js"></script>
     </head>
     <body>
-        <div class="upload-msg"> Upload media to start Conversion! </div>
+        <div class="main-container">
+        <?php
+            require_once('../db/db-conn.php');
+            $getData = mysqli_fetch_assoc(mysqli_query($conn, "SELECT raw_data FROM user_data WHERE username='".($_SESSION['username'])."'"));
+            ?>
+            
+            <?php
+            if (($getData['raw_data']) != '')
+            {
+                $Message = "Media has been successfully converted!";
+                $DataName = "File Name: '".$getData['raw_data']."'";
+            }
+        else
+            {
+                $Message = "Oops! No media available to convert.";
+                $DataName = 'File name: [No file selected]';
+            }
+            ?>
+            <div class="upload-msg"> <?php echo $Message;?></div>
+            <div class="upload-msg2"> <?php echo $DataName ?></div>
 
-        <div class="upload-container">
-            <form name="UploadForm" action="" method="POST">
-                <label class="browseButton">
-                <input name="UploadMedia" type="file"/>
-                Browse
-                </label>
-                <br>
-                <button class="convertButton" type="submit" name = "convertButton" value="submit"> Convert</button>
-            </form>
+            <div class="upload-container">
+                <form name="UploadForm" action="../php/conversion.inc.php" method="POST">
+                    <br>
+                    <button class="convertButton" type="submit" name = "convertButton" value="submit"> Download</button>
+                </form>
+            </div>
         </div>
     </body>
 </html>

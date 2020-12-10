@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $(".o2-box").mouseover(function(){
-        $(".product-title-1").css("color", "white");
-        $(".product-tagline-1").css("color", "grey");
+        $(".product-title-1").css("color", "#CB4444");
+        $(".product-tagline-1").css("color", "white");
         $(this).css("background-color", "#7623DE");
     });
     $(".o2-box").mouseout(function(){
@@ -11,8 +11,8 @@ $(document).ready(function(){
     });
 
     $(".h2o-box").mouseover(function(){
-        $(".product-title-2").css("color", "white");
-        $(".product-tagline-2").css("color", "grey");
+        $(".product-title-2").css("color", "#CB4444");
+        $(".product-tagline-2").css("color", "white");
         $(this).css("background-color", "#7623DE");
     });
     $(".h2o-box").mouseout(function(){
@@ -32,6 +32,16 @@ $(document).ready(function(){
         $('html,body').animate({
             scrollTop: $(".compress-or-convert").offset().top},
             'slow');
+    });
+
+    $(".o2-box").click(function()
+    {
+        window.location.href="login.php";
+    });
+
+    $(".h2o-box").click(function()
+    {
+        window.location.href="login.php";
     });
 
     $("#headerButton9").click(function()
