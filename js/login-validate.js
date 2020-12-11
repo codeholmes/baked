@@ -18,9 +18,9 @@ function UsernameLengthValidate(UsrName)
     }
 }
 
-function PasswordLengthValidate(UsrName)
+function PasswordLengthValidate(Password)
 {   
-    if ((UsrName.length) <= 7)
+    if ((Password.length) <= 7)
         {
             alert("Invalid Password");
             return false;
@@ -34,8 +34,10 @@ function PasswordLengthValidate(UsrName)
 function ValidateLogin()
 {
     let valid= true;
-    valid &= UsernameLengthValidate(document.forms["LoginForm"]["username"].value);
-    valid &= PasswordLengthValidate(document.forms["LoginForm"]["password"].value);
+    valid &= UsernameLengthValidate(document.getElementById("UserName").value);
+    valid &= UsernameLengthValidate(document.getElementById("PassWord").value);
+    //valid &= UsernameLengthValidate(document.forms["LoginForm"]["username"].value);
+    //valid &= PasswordLengthValidate(document.forms["LoginForm"]["password"].value);
     return valid? true:false;
 } 
 

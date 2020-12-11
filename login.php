@@ -67,8 +67,8 @@ else {}
                 </div>
                 <div>
                     <form name="LoginForm" action="php/login-user.php" onsubmit="return ValidateLogin();" method="POST">
-                        <input type="text" name="username" placeholder ="Username" required> <br>
-                        <input type="password" name="password" placeholder="Password" required> <br>
+                        <input type="text" id="UserName" name="username" placeholder ="Username" required> <br>
+                        <input type="password"  id="PassWord" name="password" placeholder="Password" required> <br>
                         <div class="password-reset">
                             I forget my password.
                         </div>

@@ -1,0 +1,118 @@
+nav
+{
+    width: 100%;
+}
+.adminDash
+{
+
+    width: 280px;
+    height: 40px;
+    background-color: teal;
+    position: fixed;
+    font-family: Helvetica;
+    font-size: 20px;
+    color: palegoldenrod;  
+    margin-left: -330px;
+    margin-right: 300px;
+    margin-top: 55px;
+    letter-spacing: 1px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.adminDashText
+{
+    margin-left: 45px;
+
+}
+.nav-links
+{
+    display: flex;
+    justify-content: space-around;
+    font-family: Helvetica;
+    font-size: 20px;
+    color: grey;
+    
+}
+.homeLink, .loginHomeLink
+{
+    cursor: pointer;
+}
+.nav-links-2
+{
+    font-weight: bold;
+    margin-top: 55px;
+    margin-left: 15px;
+}
+
+.dropdown-container
+{
+    position: relative;
+    width: 120px;
+    height: 60px;
+    margin-top: 50px;
+    margin-right: 250px;
+    /*background-color: #6e778078;*/
+    color: rgb(218, 213, 213);
+}
+
+.hello-user
+{
+    position: fixed;
+    margin-right: 5px;
+    margin-left: 800px;
+    margin-top: 52px;
+    font-family: Helvetica;
+    border-radius: 30px;
+    position: relative;
+    width: 200px;
+    height: 35px;
+    background-color: #7623DE;
+    color: rgb(218, 213, 213);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+.nav-account
+{
+    transition-duration: 0.2s;
+    position: absolute;
+    display: block;
+    font-family: Helvetica;
+    border-radius: 30px;
+    position: relative;
+    width: 120px;
+    height: 30px;
+    background-color: #6e778078;
+    color: rgb(218, 213, 213);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 10px;
+    
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.logout
+{
+    font-family: Helvetica;
+    border-radius: 30px;
+    position: relative;
+    width: 100px;
+    height: 25px;
+    background-color: #a53d54;
+    color: rgb(218, 213, 213);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
