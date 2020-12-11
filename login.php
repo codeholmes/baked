@@ -73,14 +73,13 @@ else {}
                             I forget my password.
                         </div>
                         <button class="LoginBtnColor" type="submit" name = "login-submit-btn"> Login </button>
-                        <div>
-                            <hr>
-                        </div>
                     </form>
                 </div>
                 <div>
                     <p class="Create-Account-1"> Don't have an account? <strong class="Create-Account-2"> Create one. </strong> </p>
                 </div>
+                <hr>
+                <p class="admin-login"> Admin Login</p>
             </div>
         </div>
     </body>

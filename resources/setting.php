@@ -83,7 +83,7 @@ include('../pages/header.php'); ?>
                     </div>
                     <div class="wallet-title" >Add money with coupon</div>
                     <div>
-                    <form name="CouponForm" action="../php/validate-coupon.php" onsubmit="return ValidateCoupon();" method="POST">
+                    <form name="CouponForm" action="../php/validate-coupon.php" method="POST">
                         <input class="coupon-code" type="text" name ="CouponCode" placeholder="Enter coupon code">
                         <button class="add-money" type="submit" name="AddMoney">Add</button>
                     </form> 

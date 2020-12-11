@@ -28,4 +28,10 @@ $(document).ready(function(){
     {
         window.location.href='login.php';
     });
+
+    $(".admin-login").click(function()
+    {
+        window.location.href='adminlogin.php';
+    });
+
 });

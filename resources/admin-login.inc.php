@@ -39,7 +39,7 @@ include('../pages/admin-header.php');
                 </div>
 
                 <div hidden id="actionContainer2">
-                    <div class="coupon-title" >Add money with coupon</div>
+                    <div class="coupon-title" >Create Coupon Code</div>
                     <form name="CouponForm" action="../php/admin-create-coupon.php" method="POST">
                             <input class="coupon-code" name ="CouponCode" type="text"  placeholder="Enter coupon code"><br>
                             <input class="coupon-amount" name ="CouponAmount" type="text"  placeholder="Enter amount"><br>

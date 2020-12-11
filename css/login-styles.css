@@ -18,7 +18,7 @@ body
     position: relative;
     padding: 5vh;
     width: 400px;
-    height: 400px;
+    height: 450px;
     color: #212429;
     background-color: white;
     font-family:"helvetica";
@@ -49,6 +49,7 @@ body
     color:grey;
     font-family: Helvetica;
     font-weight: 100;
+    margin-bottom: 20px;
 }
 .brand-pointer
 {
@@ -58,7 +59,8 @@ body
 
 .welcome-text
 {
-    margin-bottom: 3vh;
+    margin-top: 20px;
+    margin-bottom: 1vw;
 
 }
 
@@ -122,4 +124,21 @@ hr
 {
     color: #449aa0;
     cursor: pointer;
+}
+
+.admin-login
+{
+    padding-left: 1vh;
+    padding-top: 0vh;
+    font-size: 15px;
+    color: grey;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.admin-login:hover
+{
+    color: teal;
 }

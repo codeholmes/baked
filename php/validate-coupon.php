@@ -2,25 +2,31 @@
 session_start();
 if ($_SESSION['username'] != '')
 {
-    //echo "testing0";
+    echo "testing0";
     //echo "LOGGED IN";
     if (isset($_POST['AddMoney']))
     {
+        require_once('../db/db-conn.php');
         //echo "testing1";
-        $CouponCode = $_POST['CouponCode'];
-        include('../db/db-conn.php');
+        $Coupon = strval(strtoupper($_POST['CouponCode']));
 
-        $query1 = "SELECT coupon_name FROM coupon where coupon_name = '".$CouponCode."'";
+        $query1 = "SELECT coupon_name FROM coupon where coupon_name = '".$Coupon."'";
 
-        // cross check
-        if ($CouponCode == $query1)
+        //echo " ";
+        //echo $query1;
+        //echo " ";
+        //echo $Coupon;
+        
+        $getCouponCode = mysqli_fetch_assoc(mysqli_query($conn, $query1)); //cross check
+
+        if ($Coupon == strval($getCouponCode['coupon_name']))
         {
             if (mysqli_query($conn, $query1))
             {
                 //echo "testing2";
 
                 // get amount
-                $query2 = "SELECT coupon_amount FROM coupon WHERE coupon_name = '".$CouponCode."';";
+                $query2 = "SELECT coupon_amount FROM coupon WHERE coupon_name = '".$Coupon."';";
                 $getCouponAmount = mysqli_fetch_assoc(mysqli_query($conn, $query2));
     
                 // appending new amount to previous amount by using += instead replace/update
@@ -42,9 +48,8 @@ if ($_SESSION['username'] != '')
                 echo "Error: ".$query3."<br>".mysqli_error($conn);
             }
         }
-        else
         {
-            // no such coupon exist
+            // NOT MATCHED!!!! GO BACK!!!
             header("Location: http://localhost/baked/resources/setting.php");
             exit;
         }
